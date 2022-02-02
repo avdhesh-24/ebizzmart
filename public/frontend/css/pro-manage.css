@@ -1,0 +1,63 @@
+.prosearchmenu{display:flex;align-items:center;justify-content:start;padding:0}
+.prosearchmenu li{position:relative;margin-right:12px;font-size:14px;color:rgb(var(--blackrgb)/.5)!important}
+.prosearchmenu li:after{content:'|';margin-left:12px}
+.prosearchmenu li:last-child:after{display:none}
+.prosearchmenu li a{color:var(--thm2)}
+
+.ProTop .btn-group .btn{border-color:rgb(var(--thmrgb2)/.3);font-size:14px}
+.ProTop .btn-group .btn:hover{background:var(--thm2);color:var(--white)}
+.ProTop .btn-group .btn.btn-outline-danger{border-color:#dc3545}
+.ProTop .btn-group .btn.btn-outline-danger:hover{background:#dc3545}
+
+.TableBox .card-body .row{align-items:center}
+.TableBox .card-body .row:first-child{margin-bottom:5px}
+.TableBox .card-body .row:nth-child(2n){margin:0 -25px}
+.TableBox .card-body .row:nth-child(2n)>div{padding:0}
+.DataTable{font-size:15px}
+.DataTable>:not(caption)>*>*{padding:.5rem 1rem!important}
+.DataTable>thead>tr>th:not(.sorting_disabled),.DataTable>thead>tr>td:not(.sorting_disabled){padding-right:25px!important}
+.DataTable>thead>tr>th:first-child{padding-right:1rem!important}
+.DataTable>thead>tr>th:first-child:after,.DataTable>thead>tr>th:first-child:before{display:none}
+.DataTable>thead .sorting:before,.DataTable>thead .sorting:after{bottom:.7em!important}
+.DataTable thead{background:var(--thm2);color:var(--white)}
+.DataTable thead th{font-weight:500!important}
+.DataTable thead .form-check-input[type=checkbox]:after{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 9l4 4l11-12'/%3e%3c/svg%3e")}
+.DataTable thead .form-check{align-items:center}
+.DataTable .form-check input{margin:0!important}
+.badge{font-weight:400!important;font-size:12px!important;line-height:14px!important}
+.btni{height:32px;width:32px;padding:0!important;display:inline-grid!important;place-items:center}
+.ProTable{display:flex;justify-content:space-between}
+.ProTable .img{max-width:50px;height:45px}
+.ProTable .img img{height:100%;width:100%;object-fit:cover}
+.ProTable>div:last-child{width:calc(100% - 65px)}
+.ProTable h3{font-size:14px;display:-webkit-box;overflow:hidden;-webkit-box-orient:vertical;-webkit-line-clamp:2;margin-bottom:5px;line-height:150%!important;font-weight:600!important}
+.ProTable p{font-size:13px!important;margin:0;line-height:normal!important;color:rgb(var(--blackrgb)/.6)!important}
+
+.TableBox .card-body .dataTables_info{padding:0;font-size:14px}
+
+.AddPro,.AddPro .form-control,.AddPro .btn-group label,.AddPro .accordion-button{font-size:14px!important}
+.AddPro .ProImages{display:flex;justify-content:space-between;flex-wrap:wrap}
+.AddPro .ProImages>div{width:15%;background:rgb(var(--blackrgb)/.1);margin-bottom:5px;padding:0}
+.AddPro .ProImages>div img{height:100%;width:100%;object-fit:contain;border-radius:3px}
+.AddPro .ProImages>div .btn-close{position:absolute;z-index:2;padding:0;top:-5px;right:-5px;height:14px;width:14px;background:var(--thm2) url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e")  center/0.35em auto no-repeat;opacity:1;border-radius:50%}
+.AddPro label{margin:0;font-weight:500}
+.AddPro .pic{border:1px rgb(var(--blackrgb)/.1) dashed;background:rgb(var(--blackrgb)/.05);margin-bottom:15px;padding:9px;text-align:center;height:70px;width:100%;border-radius:5px;display:flex;align-items:center;justify-content:center;cursor:pointer}
+.AddPro .pic img{height:40px;opacity:.5;margin-right:9px}
+.AddPro .pic span{display:flex;align-items:flex-end}
+.AddPro .pic span>span{display:block}
+.AddPro textarea.form-control{height:80px}
+.AddPro .btn-group .btn-outline-thm{border-color:var(--thm);color:var(--thm)}
+.AddPro .btn-group .btn-check:checked+.btn-outline-thm{background:var(--thm);color:var(--white)}
+.AddPro .row{margin:-8px}
+.AddPro .row>div{padding:8px}
+.AddPro .accordion-button{background:rgb(var(--thmrgb)/.2);z-index:0!important;}
+.AddPro .accordion-button:not(.collapsed)::after{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")}
+.AddPro .accordion-button:not(.collapsed){background:var(--thm);color:var(--white)}
+.AddPro .ProAttList{margin:0;padding:0}
+.AddPro .ProAttList li{margin-bottom:9px;padding-bottom:9px;border-bottom:1px solid rgb(var(--blackrgb)/.1)}
+.AddPro .ProAttList li:last-child{margin:0;padding:0;border:none}
+.AddPro .ProAttList li .form-control{background:rgb(var(--blackrgb)/.05)}
+.AddPro .ck-editor .ck-content{min-height:90px;max-height:350px;overflow:auto}
+@media only screen and (max-width:991px){}
+@media only screen and (max-width:767px){}
+@media only screen and (max-width:467px){}

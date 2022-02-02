@@ -1,0 +1,1 @@
+<x-admin.layout><x-admin.product.add-product/></x-admin.layout>

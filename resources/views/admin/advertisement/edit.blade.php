@@ -1,0 +1,1 @@
+<x-admin.layout><x-admin.advertisement.advertisement-edit :data="$lists"/></x-admin.layout>

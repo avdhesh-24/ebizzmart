@@ -1,0 +1,130 @@
+body>.main{overflow:inherit!important}
+.Detail{padding-top:0!important}
+.Detail .breadcrumb{margin-bottom:20px;justify-content:flex-start}
+
+.Featured .FedBlock{margin-bottom:25px}
+.CompanyTop{z-index:2}
+.CompanyTop.is-fixed{height:70px}
+.CompanyTop>div{z-index:2;width:100%}
+.CompanyTop.is-fixed>div{position:fixed;top:56px}
+
+.Slider .carousel{height:auto!important;max-height:inherit!important}
+
+section.ComDBox{padding:0}
+section.ComDBox>div{padding:40px 0;background:var(--white)}
+section.ComDBox>div.grey{background:#f3f3f3}
+.CompanyP{padding-top:24px!important}
+.ComDBox,.CompanyP .card{border-radius:0!important;border:none!important;box-shadow:0 0 12px rgb(var(--blackrgb)/.2)}
+.ComDBox .card-header{background:var(--thm);border:none;width:100%;z-index:2;top:108px;display:flex;margin:0;justify-content:space-between;align-items:center;border-radius:0!important;padding:0 1rem;transition:all .3s}
+.ComDBox .card-header>.nav{width:calc(100% - 680px);justify-content:center}
+.ComDBox .card-header>div:first-child{max-width:320px;padding:.5rem 0}
+.ComDBox .card-header>div:last-child{max-width:360px;padding:.5rem 0}
+.ComDBox .card-header>div:last-child{display:flex;align-items:flex-start;justify-content:space-between}
+.ComDBox .card-header>div:last-child>a{min-width:120px;padding:0 15px;font-size:13px;margin-right:9px!important;line-height:36px}
+.ComDBox .card-header>div:last-child .input-group{width:220px;margin:0;transition:all .3s}
+.ComDBox .card-header>div:last-child .input-group .form-control{border-right:none;padding-right:0;font-size:14px;line-height:24px;transition:all .3s}
+.ComDBox .card-header>div:last-child .input-group .form-control~span{transition:all .3s}
+.ComDBox .card-header>div:last-child .input-group .form-control:focus{box-shadow:none;border-color:var(--thm2)}
+.ComDBox .card-header>div:last-child .input-group .form-control:focus~span{border-color:var(--thm2)}
+.ComDBox .card-header>div:last-child .input-group .input-group-text{background:var(--white)}
+
+.CompanyLogo{max-width:80px;height:55px;border:1px solid rgb(var(--blackrgb)/.1);background:var(--white);padding:6px;border-radius:5px;transition:all .3s}
+.CompanyLogo img{height:100%;width:100%;object-fit:contain}
+.CompanyName{width:calc(100% - 90px);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;transition:all .3s}
+.CompanyAddress{min-width:200px;width:100%;text-align:left!important;transition:all .3s}
+.ComDBox .card-header .CompanyAddress p{font-size:12px;color:rgb(var(--whitergb)/.6)!important}
+.ComDBox .card-header .CompanyName h1{margin-bottom:0;font-size:16px!important;color:var(--white)}
+.ComDBox .card-header nav{padding:0;height:100%}
+.ComDBox .card-header nav>ul>li>a{padding:7px 18px!important;font-size:15px;height:70px;color:var(--white)!important;transition:all .3s}
+.ComDBox .card-header nav>ul>li>a.active{background:var(--white);color:var(--thm)!important}
+.ComDBox .card-header nav .dropdown-menu{box-shadow:0 3px 5px rgb(var(--blackrgb)/.2);background:#eee!important;border:none;display:block;visibility:hidden;transform:rotateX(-90deg);transform-origin:0 0;/*transform-origin:top center;*/ opacity:0;transition:all .4s}
+.ComDBox .card-header nav .dropdown-menu,.ComDBox .card-header nav .dropdown-menu li:last-child>a{border-radius:0 0 5px 5px}
+.ComDBox .card-header nav .dropdown-menu:after{position:absolute;content:'';height:9px;width:9px;transform:rotate(45deg);background:#eee;top:-5px;left:28%;z-index:-1}
+.ComDBox .card-header nav .dropdown-menu li{border:none!important;border-bottom:1px solid rgb(var(--thmrgb2)/.15)!important}
+.ComDBox .card-header nav .dropdown-menu li>a{background:#eee!important}
+.ComDBox .card-header nav .dropdown-menu li>a:hover{box-shadow:none!important}
+.ComDBox .card-header nav .dropdown-menu li:hover>a{background:rgb(var(--thmrgb2)/.2)!important;color:var(--black)!important}
+.ComDBox .card-header nav .dropdown-menu li.active>a,.ComDBox .card-header nav .dropdown-menu li.active:hover>a{background:var(--thm2)!important;color:var(--white)!important}
+.ComDBox .card-header nav.navbar .dropdown:hover .dropdown-menu{opacity:1;visibility:visible;transform:rotateX(0deg)}
+
+.CompanyP>.container>.row:last-child>div:first-child{width:270px}
+.CompanyP>.container>.row:last-child>div:last-child{width:calc(100% - 270px)}
+.LeftPanelSec{position:sticky;top:60px}
+
+.LeftPanelSec .Leftpanel,.LeftPanelSec .links{padding:15px 20px!important;transition:all .5s}
+.Leftpanel .SubTitle{color:var(--white)}
+.Leftpanel ul{padding:0;margin:0}
+.Leftpanel ul li{border-bottom:1px solid rgb(var(--blackrgb)/.05)}
+.Leftpanel ul li a{display:flex;align-items:center;color:rgb(var(--blackrgb)/.8);width:auto;position:relative;padding:7px 0;font-size:15px;line-height:20px;border-radius:8px;transition:all .5s}
+.Leftpanel ul li a i{height:30px;width:30px;font-size:15px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:var(--thm);color:var(--white);transition:all .5s}
+.Leftpanel ul li:hover a{color:var(--thm)}
+.Leftpanel ul li:hover i{box-shadow:0 9px 15px rgb(var(--blackrgb)/.2);background:var(--thm2)}
+.Leftpanel ul li.active,.Leftpanel ul li:last-child{border:none}
+.Leftpanel ul li.active a{background:var(--thm2);color:var(--white);box-shadow:0 9px 15px rgb(var(--blackrgb)/.2);margin-right:-9px;margin-left:-9px;padding:7px 9px}
+.Leftpanel ul li.active a i{background:var(--white);color:var(--black);mix-blend-mode:screen}
+.Leftpanel:hover{box-shadow:0 3px 8px rgb(0 0 0/.2)}
+
+.card.ComCard{position:sticky!important;top:180px;border-radius:5px!important;overflow:hidden}
+
+.ComDBox h2,.ComDBox .h2{font-size:24px!important;color:var(--thm2)!important;margin:0 0 9px}
+.ComDBox h3,.ComDBox .h3{font-size:22px!important;color:var(--thm)!important;margin:0 0 9px}
+.ComDBox h4,.ComDBox .h4{font-size:20px!important;color:var(--thm)!important;margin:0 0 9px}
+.ComDBox h5,.ComDBox .h5{font-size:18px!important}
+.ComDBox h2.thm2,.ComDBox h3.thm2,.ComDBox h4.thm2{color:var(--thm2)!important}
+.ComDBox .IconBox{transition:all .5s}
+.ComDBox .IconBox .icon{width:60px}
+.ComDBox .IconBox h4{font-size:18px;margin-bottom:9px!important}
+.ComDBox .IconBox p{display:-webkit-box;font-size:14px!important;overflow:hidden;-webkit-box-orient:vertical;-webkit-line-clamp:2}
+.ComDBox .IconBox:hover{background:rgb(var(--thmrgb)/.1);transform:translateY(-3px);box-shadow:0 5px 5px rgb(var(--blackrgb)/.1)}
+
+.BuyBtnBox{bottom:0;display:flex;padding:15px 20px; max-width:900px; margin:0 auto; align-items:center;justify-content:space-between;border:1px solid rgb(var(--blackrgb)/.1);border-radius:6px;background:rgb(var(--thmrgb2)/.1);transition:all .5s}
+.ComDBox .BuyBtnBox>div h2{margin:0!important}
+.BuyBtnBox .btn{line-height:40px}
+
+.HomeBlock .CatCarousel .ProBlock .card-head{height:150px}
+.HomeBlock .CatCarousel .ProBlock .card-body h3.name{font-size:13px!important;color:var(--black)!important;	margin:0!important;line-height:1.2rem!important;height:38px}
+.HomeBlock .CatCarousel .ProBlock .card-body{padding:12px!important}
+.HomeBlock .CatCarousel .ProBlock .OffTag{top:125px}
+.HomeBlock .CatCarousel .ProBlock p{line-height:1.4rem!important}
+.HomeBlock .CatCarousel .ProBlock .card-body .price{margin:9px 0 0;font-size:15px}
+.HomeBlock .CatCarousel .ProBlock .card-body .price>.cutprice{font-size:11px}
+
+.Ccontact .card{overflow:hidden}
+.Ccontact .card-header{background:var(--thm2);z-index:1}
+.Ccontact .card-header h3{color:var(--white)!important}
+.ProPage .CatCarousel .ProBlock{ margin-bottom:24px}
+
+.Highlights{max-width:1300px;width:100%;border:1px solid rgb(var(--blackrgb)/.15);border-bottom:none!important}
+.Highlights ul{list-style:none;margin:0;padding:0}
+.Highlights ul li{background:var(--white);font-size:14px!important;line-height:170%!important;display:flex;justify-content:space-between}
+.Highlights ul:not(.browser-default)>li{list-style-type:inherit}
+.Highlights ul li::marker{display:block}
+.Highlights ul li span:first-child{color:rgb(var(--blackrgb)/.7);width:180px;font-weight:600;display:inline-block!important;position:relative!important;margin-right:15px!important}
+.Highlights ul li span:first-child:after{content:":";position:absolute;right:-9px;top:4px}
+.Highlights ul li span:last-child{width:calc(100% - 195px)}
+/*.Highlights li:last-child{border:none}*/
+.Highlights li:nth-child(2n-2){background:rgb(0 0 0/.03)}
+.Highlights li{font-size:15px!important;line-height:170%!important;padding:4px 9px;color:rgb(var(--blackrgb)/.7)!important;border-bottom:1px solid rgb(var(--blackrgb)/.15)}
+.Highlights.Hcol2{max-width:1300px;border-right:none}
+.Highlights.Hcol2 ul{display:flex;flex-wrap:wrap}
+.Highlights.Hcol2 ul li{width:50%;padding:0;display:flex;border-right:1px solid rgb(var(--blackrgb)/.15)}
+.Highlights.Hcol2 li:nth-child(2n-2){background:none}
+.Highlights.Hcol2 ul li span:first-child{width:140px;background:rgb(0 0 0/.08);display:inline-flex;padding:5px 8px;height:100%;margin-right:9px!important}
+.Highlights.Hcol2 ul li span:first-child:after{display:none}
+.Highlights ul li span:last-child{width:calc(100% - 150px);padding:5px 8px}
+
+.ComAlbums .card{height:140px;width:100%;border-radius:5px!important;overflow:hidden;transition:all .5s}
+.ComAlbums .card img{height:100%;width:100%;object-fit:cover}
+.ComAlbums .card a{height:100%;display:block}
+.ComAlbums .card:hover{transform:translateY(-3px)}
+
+.Featured .row{margin:0 -5px!important;}
+.Featured .row>div{padding:0 5px!important;}
+.FedBlock{border-radius:5px!important; overflow:hidden; margin-top:9px;}
+.FedBlock .card-body{height:120px!important;}
+.FedBlock h3{font-size:14px!important; color:var(--thm2)!important; margin:0!important; font-weight:600!important;}
+
+@media only screen and (min-width:991px){.ProPage .CatCarousel>div{width:20%}}
+@media only screen and (max-width:991px){}
+@media only screen and (max-width:767px){}
+@media only screen and (max-width:467px){}

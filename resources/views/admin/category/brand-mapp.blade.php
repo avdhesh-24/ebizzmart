@@ -1,0 +1,1 @@
+<x-admin.layout><x-admin.category.brand-mapp :list="$category"/></x-admin.layout>

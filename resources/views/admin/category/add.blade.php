@@ -1,0 +1,1 @@
+<x-admin.layout><x-admin.category.category-add :parent="$Parent"/></x-admin.layout>

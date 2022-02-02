@@ -1,0 +1,1 @@
+<x-admin.layout><x-admin.category.category-edit :data="$lists"/></x-admin.layout>

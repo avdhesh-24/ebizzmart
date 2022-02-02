@@ -1,0 +1,1 @@
+<x-admin.layout><x-admin.banner-bottom.bottom-edit :data="$lists" /></x-admin.layout>

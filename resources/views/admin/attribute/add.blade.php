@@ -1,0 +1,1 @@
+<x-admin.layout><x-admin.attribute.add-attribute :data="$Id"/></x-admin.layout>

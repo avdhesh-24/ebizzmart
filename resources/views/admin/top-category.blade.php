@@ -1,0 +1,1 @@
+<x-admin.layout><x-admin.top-category/></x-admin.layout>

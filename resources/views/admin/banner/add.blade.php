@@ -1,0 +1,1 @@
+<x-admin.layout><x-admin.banner.banner-add/></x-admin.layout>

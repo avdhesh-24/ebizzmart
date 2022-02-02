@@ -1,0 +1,1 @@
+<x-admin.layout><x-admin.attribute-group.add-attribute/></x-admin.layout>
