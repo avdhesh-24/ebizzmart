@@ -27,37 +27,26 @@
                     </div>
                     <form class="card">
                         <div class="card-body">
-                            <ul class="PostStep">
-                                <li><a href="#">Select Category</a></li>
-                            </ul>
+                            <ul class="PostStep"></ul>
                             <div class="row CatBoxs">
                                 <div class="col-md-4">
                                     <div class="CatBox" id="CatBox1">
                                         <ul>
                                             @foreach($category as $cat)
-                                            <li><span>{{$cat->name}} ({{count($cat->child)}})</span></li>
+                                            <li onclick="getChildCategory({{$cat->id}},{{$cat->level + 1 }},{{count($cat->child)}})"><span>{{$cat->name}} ({{count($cat->child)}})</span></li>
                                             @endforeach
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
-                                    <div class="CatBox" id="CatBox2" style="display:none">
-                                        <ul>
-                                            <li><span>Agricultural Growing Media</span></li>
-                                        </ul>
-                                    </div>
+                                    <div class="CatBox childBox" id="CatBox2" style="display:none"></div>
                                 </div>
                                 <div class="col-md-4">
-                                    <div class="CatBox" id="CatBox3" style="display:none">
-                                        <ul>
-                                            <li><span>Agricultural Growing Media</span></li>
-                                        </ul>
-                                    </div>
+                                    <div class="CatBox childBox" id="CatBox3" style="display:none"></div>
                                 </div>
                             </div>
                             <div class="text-center">
-                                <p><small><strong>Categories Selected:</strong> Consumer Electronics >> Video Games & Accessories >> Light Guns</small></p>
-                                <a href="manage-product-edit.php" class="btn btn-main2 mt-0">I have read and agree to the following terms.</a>
+                                <a href="" id="nextprocess" class="btn btn-main2 mt-4 disabled">I have read and agree to the following terms.</a>
                             </div>
                         </div>
                     </form>
@@ -75,47 +64,6 @@
 @endpush
 
 @push('scripts')
-<script type="text/javascript">
-$(document).ready(function(){
-    $.fn.ProCatMenu = function(options) {
-        var opts = $.extend({}, $.fn.ProCatMenu.defaults, options);
-        return this.each(function() {
-            var obj = $(this);
-            $(obj).find('#CatBox1 li').on(opts.trigger_event_type, function() {
-                $(obj).find('.CatBox li').removeClass('active');
-                $(this).addClass('active');
-                $('.PostStep li:nth-child(1)').addClass('active');
-            })
-            $(obj).find('#CatBox2 li').on(opts.trigger_event_type, function() {
-                $(obj).find('.CatBox2 li').removeClass('active');
-                $('#CatBox2 li').removeClass('active');
-                $(this).addClass('active');
-                $('.PostStep li:nth-child(2)').addClass('active');
-            })
-            $(obj).find('#CatBox3 li').on(opts.trigger_event_type, function() {
-                $(obj).find('.CatBox3 li').removeClass('active');
-                $(this).addClass('active');
-                $('.PostStep li:nth-child(3)').addClass('active');
-            })
-        });
-    }
-    $('.CatBoxs').ProCatMenu({
-        trigger_event_type: 'click' //mouseover | click 
-    });
-    $('#CatBox1 li span').click(function(){
-        $('#CatBox2').show();
-    });
-    $('#CatBox2 li span').click(function(){
-        $('#CatBox3').show();
-    });
-    $('.PostStep li:nth-child(1)').click(function(){
-        $('#CatBox2 li').removeClass('active');
-        $('.PostStep li:nth-child(2)').removeClass('active');
-    });
-    $('.PostStep li:nth-child(2)').click(function(){
-        $('#CatBox3 li').removeClass('active');
-        $('.PostStep li:nth-child(3)').removeClass('active');
-    });
-});
-</script>
+<script defer src="{{asset('frontend/js/manage-product.js')}}"></script>
+<script> const ChooseProductCategory = "{{route('account.choose-product-category')}}"; </script>
 @endpush       

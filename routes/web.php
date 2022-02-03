@@ -72,6 +72,7 @@ Route::get('partner-factories', [App\Http\Controllers\AccountController::class, 
 
 Route::get('manage-product', [App\Http\Controllers\AccountProductController::class, 'index'])->name('account.manage-product')->middleware('verified');
 Route::get('post-product/{category?}', [App\Http\Controllers\AccountProductController::class, 'New'])->name('account.post-product')->middleware('verified');
+Route::post('choose-product-category', [App\Http\Controllers\AccountProductController::class, 'Choose_Product_Category'])->name('account.choose-product-category')->middleware('verified');
 
 
 Route::namespace("Admin")->prefix('control-panel')->group(function(){
