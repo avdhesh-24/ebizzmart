@@ -95,17 +95,19 @@
                     <section class="ComDBox mb-4" id="2">
                         <div class="HomeBlock">
                             <div class="container">
-                                <h2 class="m-0 h3 thm2">Production Capacity</h2><hr class="border-secondary">
-                                <h3 class="mt-4 h5">Factory Information</h3>
+                                <h2 class="m-0 h3 thm2">Partner Factories</h2><hr class="border-secondary">
+                                @foreach($data->factories as $factorie)
+                                <h3 class="mt-4 h5">{{$loop->iteration}} Factory Information</h3>
                                 <div class="Highlights mt-2">
                                     <ul>
-                                        <li><span>Factory Size</span> <span>1,000-3,000 square meters</span></li>
-                                        <li><span>Factory Country/Region</span> <span>Shuiwei Er Qu, Minzhi Dadao, Longha Xinqu, Shenzhen</span></li>
-                                        <li><span>No. of Production Lines</span> <span>1</span></li>
-                                        <li><span>Contract Manufacturing</span> <span>OEM Service Offered, Design Service Offered, Buyer Label Offered</span></li>
-                                        <li><span>Annual Output Value</span> <span>US$10 Million - US$50 Million</span></li>
+                                        <li><span>Factory Size</span> <span>{{$factorie->factory_size}}</span></li>
+                                        <li><span>Factory Country/Region</span> <span>{{$factorie->factory_address}}</span></li>
+                                        <li><span>No. of Production Lines</span> <span>{{$factorie->production_line}}</span></li>
+                                        <li><span>Contract Manufacturing</span> <span>{{$factorie->manufacturing}}</span></li>
+                                        <li><span>Annual Output Value</span> <span>{{$factorie->annual_output}}</span></li>
                                     </ul>
                                 </div>
+                                @endforeach
                             </div>
                         </div>
                     </section>

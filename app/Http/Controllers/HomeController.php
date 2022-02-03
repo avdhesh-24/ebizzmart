@@ -190,7 +190,7 @@ class HomeController extends Controller
     }
 
     public function Company($alias=null,$page=null){
-        $data = Company::with('user','business','trademarketdistribution','type','banners','countries','cities','albums','certification','productcertification')->where('company_alias',$alias)->first();
+        $data = Company::with('user','business','factories','trademarketdistribution','type','banners','countries','cities','albums','certification','productcertification')->where('company_alias',$alias)->first();
         if(empty($data)){ abort(404); }
         if(!empty($page)){
             $paymenttypes = PaymentType::where('status',1)->orderby('name','ASC')->get();
