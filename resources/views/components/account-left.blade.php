@@ -1,6 +1,6 @@
 <div class="col-md-2">
     <div class="LeftPanelSec">
-        <div class="card links mb-4">
+        <div class="card links mb-2">
             <div class="card-body d-flex align-items-center prodebox">
                 <div class="proimg"><img src="{{asset('frontend/img/man-colored.svg')}}"></div>
                 <div class="ms-3">
@@ -10,13 +10,16 @@
             </div>
             <button class="navbar-toggler d-none" type="button" id="AccMenuBar" data-bs-toggle="collapse" data-bs-target="#AccountMenu" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><span>Account Menu</span><i class="fa fa-bars"></i></button>
         </div>
+        <div class="card cardbox mb-2" id="AccountMenu">
+            <div class="card-body Leftpanel"></div>
+        </div>
         <div class="card cardbox mb-4" id="AccountMenu">
             <div class="card-body Leftpanel">
                 <ul>
                     <li class="{{Request::segment(1)=='profile' ? 'active' : ''}}"><a title="My Profile" href="{{route('profile')}}"><i class="fal fa-user me-2"></i> My Profile</a></li>
-                    <li  class="{{Request::segment(1)=='active' ? 'active' : ''}}"><a title="Business Card" href="business-card.php"><i class="fal fa-address-card me-2"></i> Business Card</a></li>
-                    <li  class="{{in_array(Request::segment(1),$companiesArr) ? 'active' : ''}}"><a title="Company Info" href="{{route('account.company-information')}}"><i class="fal fa-building me-2"></i> Company Info</a></li>
-                    <li><a title="Manage Product" href="manage-product.php"><i class="fal fa-heart me-2"></i> Manage Product</a></li>
+                    <li class="{{Request::segment(1)=='active' ? 'active' : ''}}"><a title="Business Card" href="business-card.php"><i class="fal fa-address-card me-2"></i> Business Card</a></li>
+                    <li class="{{in_array(Request::segment(1),$companiesArr) ? 'active' : ''}}"><a title="Company Info" href="{{route('account.company-information')}}"><i class="fal fa-building me-2"></i> Company Info</a></li>
+                    <li class="{{in_array(Request::segment(1),$productArr) ? 'active' : ''}}"><a title="Manage Product" href="{{route('account.manage-product')}}"><i class="fal fa-heart me-2"></i> Manage Product</a></li>
                     <li><a title="Message" href="message.php"><i class="fal fa-envelope me-2"></i> Message</a></li>
                     <li><a title="Contacts List" href="contacts-list.php"><i class="fal fa-id-badge me-2"></i> Contacts List</a></li>
                     <li><a title="Social Connections" href="social.php"><i class="fal fa-thumbs-up me-2"></i> Social Connections</a></li>

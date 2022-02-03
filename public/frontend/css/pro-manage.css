@@ -4,7 +4,7 @@
 .prosearchmenu li:last-child:after{display:none}
 .prosearchmenu li a{color:var(--thm2)}
 
-.ProTop .btn-group .btn{border-color:rgb(var(--thmrgb2)/.3);font-size:14px}
+.ProTop .btn-group .btn,.ProTop .btn{border-color:rgb(var(--thmrgb2)/.3);font-size:14px}
 .ProTop .btn-group .btn:hover{background:var(--thm2);color:var(--white)}
 .ProTop .btn-group .btn.btn-outline-danger{border-color:#dc3545}
 .ProTop .btn-group .btn.btn-outline-danger:hover{background:#dc3545}
@@ -50,7 +50,7 @@
 .AddPro .btn-group .btn-check:checked+.btn-outline-thm{background:var(--thm);color:var(--white)}
 .AddPro .row{margin:-8px}
 .AddPro .row>div{padding:8px}
-.AddPro .accordion-button{background:rgb(var(--thmrgb)/.2);z-index:0!important;}
+.AddPro .accordion-button{background:rgb(var(--thmrgb)/.2)}
 .AddPro .accordion-button:not(.collapsed)::after{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")}
 .AddPro .accordion-button:not(.collapsed){background:var(--thm);color:var(--white)}
 .AddPro .ProAttList{margin:0;padding:0}
@@ -58,6 +58,26 @@
 .AddPro .ProAttList li:last-child{margin:0;padding:0;border:none}
 .AddPro .ProAttList li .form-control{background:rgb(var(--blackrgb)/.05)}
 .AddPro .ck-editor .ck-content{min-height:90px;max-height:350px;overflow:auto}
+
+.PostStep{overflow:hidden;font-size:13px;width:100%;display:flex;justify-content:center}
+.PostStep li{position:relative}
+.PostStep li a{color:var(--thm2);font-size:13px;text-decoration:none;padding:5px 0 5px 45px;background:brown;background:#e8edef;position:relative;display:block}
+.PostStep li:first-child a{padding-left:40px!important}
+.PostStep li a:after,.PostStep li a:before,.PostStep li:first-child:after{content:"";width:0;height:0;position:absolute;border-top:50px solid transparent;border-bottom:50px solid transparent;top:0;bottom:0;margin:auto 0;left:100%;z-index:2;transition:all .5s}
+.PostStep li a:after{border-left:30px solid #e8edef;z-index:2}
+.PostStep li a:before{border-left:30px solid var(--white);margin-left:2px;z-index:1}
+.PostStep li:first-child:after{left:-9px;border-left:30px solid var(--white)}
+.PostStep li.active a,.PostStep li a:hover{background:var(--thm)!important;color:var(--white)!important}
+.PostStep li.active a:after,.PostStep li a:hover:after{border-left-color:var(--thm)!important}
+
+.CatBox{border:1px solid rgb(var(--blackrgb)/.1)!important; border-radius:5px!important; background:rgb(var(--thmrgb2)/.05); overflow:auto; max-height:310px}
+.CatBox::-webkit-scrollbar{width:3px}
+.CatBox::-moz-scrollbar{width:3px}
+.CatBox::-o-scrollbar{width:3px}
+.CatBox ul{margin:0; padding:0}
+.CatBox ul li{border-bottom:1px solid rgb(var(--blackrgb)/.1)}
+.CatBox ul li span{display:block; cursor:pointer; padding:3px 15px}
+.CatBox ul li:hover span,.CatBox ul li.active span{background:var(--thm2); color:var(--white)}
 @media only screen and (max-width:991px){}
 @media only screen and (max-width:767px){}
 @media only screen and (max-width:467px){}

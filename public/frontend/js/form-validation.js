@@ -1,12 +1,10 @@
 $.validator.setDefaults({
     submitHandler: function() {
-        
         $('#ccsvbtn').hide();
         $('#ccprcbtn').show();
         return true;
     }
 });
-
 $().ready(function() {
     $(".company-contact").validate({
         rules: {
@@ -18,5 +16,4 @@ $().ready(function() {
             message: "required",
         },
     });
-    
 });

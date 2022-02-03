@@ -270,6 +270,7 @@
 
 @if(Session::has('error_msg'))
 <script>
+    toastr.options.positionClass = 'toast-bottom-right';
     toastr.error("{{ session('error_msg') }}");
 </script>
 @endif 

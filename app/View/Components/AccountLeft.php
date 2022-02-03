@@ -12,8 +12,9 @@ class AccountLeft extends Component
      * @return void
      */
     public $companiesArr;
-    public function __construct()
-    {
+    public $productArr;
+    public function __construct(){
+        $this->productArr = ['manage-product'];
         $this->companiesArr = ['company-introduction','certifications-and-trademarks','trade-capacity','company-information','partner-factories'];
     }
 
