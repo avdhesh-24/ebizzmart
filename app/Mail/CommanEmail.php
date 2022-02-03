@@ -28,6 +28,7 @@ class CommanEmail extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.commanemail')->subject($this->data['subject'])->with('data', $this->data);;
+        
+        return $this->markdown('emails.commanemail')->subject($this->data['subject'])->with('data', $this->data);
     }
 }

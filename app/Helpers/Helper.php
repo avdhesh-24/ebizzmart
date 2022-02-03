@@ -35,6 +35,22 @@ class Helper{
        return  $alias=$slug;
     }
 
+    static function SupportEnquiry(){
+        return "support@ebizzmart.in";
+    }
+
+    static function OrderEnquiry(){
+        return "order@ebizzmart.in";
+    }
+
+    static function InfoEnquiry(){
+        return "info@ebizzmart.in";
+    }
+
+    static function ContactEnquiry(){
+        return "contact@ebizzmart.in";
+    }
+
     static function CompanyCategory($Category){
         if(!empty($Category)){
             $Arr = json_decode($Category);

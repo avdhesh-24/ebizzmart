@@ -373,7 +373,7 @@ class AccountController extends Controller{
         return response()->json([
             'message'   => 'Image Removed Successfully',
             'uploaded_image' => $ImgHtml
-          ]);
+        ]);
     }
 
     public function Company_Certifications(Request $request){

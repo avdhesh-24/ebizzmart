@@ -24,14 +24,17 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col-md-12 col-lg-7">
-                                        <form action="#" class="card company-contact" autocomplete="off">
+                                        <form action="{{route('company-contact-enquiry')}}" method="post" class="card company-contact" autocomplete="off">
+                                            @csrf
+                                            <input type="hidden" name="company_id" value="{{$data->id}}">
                                             <div class="card-header">
-                                                <h3 class="m-0 py-3 h5">Contact Us - Sam Web Studio Pvt Ltd.</h3>
+                                                <h3 class="m-0 py-3 h5">Contact Us - {{$data->company_name}}</h3>
                                             </div>
                                             <div class="card-body grey">
                                                 <div class="mb-2">
                                                     <label for="name" class="form-label m-0"><small>Name <span class="error">*</span> </small></label>
                                                     <input type="text" class="form-control" id="name" name="name" placeholder="Enter Your Name" >
+                                                    @error('name')<span>{{$message}}</span>@enderror
                                                 </div>
                                                 <div class="mb-2">
                                                     <label for="lemail" class="form-label m-0"><small>Mobile No. <span class="error">*</span></small></label>
@@ -43,18 +46,22 @@
                                                       <input type="text" class="form-control CountryCode" maxlength="8" oninput="maxLengthCheck(this)" value="+91" readonly name="ccode" id="ccode" aria-label="ccode">
                                                       <input type="number" class="form-control" maxlength="10" oninput="maxLengthCheck(this)" name="mobile" placeholder="Enter Your Phone No.">
                                                     </div>
+                                                    @error('name')<span>{{$message}}</span>@enderror
                                                 </div>
                                                 <div class="mb-2">
                                                     <label for="email" class="form-label m-0"><small>Email ID <span class="error">*</span></small></label>
                                                     <input type="email" class="form-control" id="email" name="email" placeholder="Enter Your Email ID">
+                                                    @error('email')<span>{{$message}}</span>@enderror
                                                 </div>
                                                 <div class="mb-2">
                                                     <label for="subject" class="form-label m-0"><small>Subject <span class="error">*</span></small></label>
                                                     <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter Your Subject">
+                                                    @error('subject')<span>{{$message}}</span>@enderror
                                                 </div>
                                                 <div class="mb-1">
                                                     <label for="message" class="form-label m-0"><small>Message <span class="error">*</span></small></label>
                                                     <textarea class="form-control" id="message" name="message"></textarea>
+                                                    @error('message')<span>{{$message}}</span>@enderror
                                                 </div>
                                                 <div class="text-center mt-3 mb-3">
                                                     <button class="btn btn-main m-0" id="ccsvbtn" type="submit">Submit</button>

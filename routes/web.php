@@ -40,6 +40,9 @@ Route::get('companies', [App\Http\Controllers\HomeController::class, 'Companies'
 ///// OTHERCONTROLLER
 Route::post('ckeditor-image-upload', [App\Http\Controllers\OtherController::class, 'Ckeditor_Image'])->name('ckeditor.image-upload');
 
+///// ENQUIRYCONTROLLER
+Route::post('company-contact-enquiry', [App\Http\Controllers\EnquiryController::class, 'Company_Contact_Enquiry'])->name('company-contact-enquiry');
+
 ////// USER ACCOUNT 
 Route::get('complete-registration', [App\Http\Controllers\AccountController::class, 'Complete_Registration'])->name('account.complete-registration')->middleware('verified');
 Route::post('profiles', [App\Http\Controllers\OtherController::class, 'Profiles'])->name('profiles');

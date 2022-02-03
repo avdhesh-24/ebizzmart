@@ -262,7 +262,10 @@
 @stack('scripts')
 
 @if(Session::has('success_msg'))
-    <script>toastr.success("{{ session('success_msg') }}");</script>
+    <script>
+        toastr.options.positionClass = 'toast-bottom-right';
+        toastr.success("{{ session('success_msg') }}");        
+    </script>
 @endif
 
 @if(Session::has('error_msg'))
