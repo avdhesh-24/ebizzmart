@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use App\Models\CompanyProductCertification;
 use Illuminate\Support\Facades\Validator;
 use App\Models\MainMarketDistribution;
