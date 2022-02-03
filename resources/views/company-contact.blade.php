@@ -78,12 +78,16 @@
                                                         @if(!empty($data->company_phone_no))
                                                         <li><i class="fal fa-phone"></i> <span>{{substr($data->company_phone_no,0,2)}}******{{substr($data->company_phone_no,8)}}</span></li>
                                                         @endif
+                                                        @if(!empty($data->company_email))
+                                                        <li><i class="fal fa-envelope"></i> <span>{{substr($data->company_email,0,3)}}*********{{substr($data->company_email,-4)}}</span></li>
+                                                        @endif
                                                         @if(!empty($data->website))
                                                         <li><i class="fal fa-link"></i> <span>{{$data->website}}</span></li>
                                                         @endif
                                                     </ul>
                                                     </ul>
-                                                    <div class="d-flex"><a href="#ViewMobile" data-bs-toggle="modal" class="btn btn-main1 w-100 me-2"><i class="fal fa-phone-volume me-1"></i> View Mobile</a><a href="#SendInquiry" data-bs-toggle="modal" class="btn btn-main w-100 ms-2" title="Send Inquiry"><i class="fal fa-envelope me-2"></i>Send Inquiry</a></div>
+                                                    <div class="d-flex"><a href="#ViewMobile" data-bs-toggle="modal" class="btn btn-main w-100 me-2"><i class="fal fa-phone-volume me-1"></i> View Mobile</a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>

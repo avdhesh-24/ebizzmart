@@ -163,6 +163,7 @@ class AccountController extends Controller{
             $data->gst = $r->gst;
             $data->iam = $r->iam;
             $data->company_phone_no = $r->company_phone_no;
+            $data->company_email = $r->company_email;
             $data->business_type = $r->business_type;
             $data->country = $r->country;
             $data->city = $r->city;

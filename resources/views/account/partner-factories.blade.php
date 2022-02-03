@@ -132,19 +132,16 @@
 @endsection
  
 @push('css')
-<title>User Profile : ebizzmart</title>
+<title>Partner Factories : ebizzmart</title>
 <link rel="stylesheet" type="text/css" media="screen,projection" href="{{asset('frontend/css/profile.css')}}">
 <link rel="stylesheet" type="text/css" media="screen,projection" href="{{asset('frontend/css/company-info.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('frontend/css/choosen/chosen.css')}}">
 <style>
 .defaultimgcss{width:130px;border-radius: 5px;cursor: pointer;transition: 0.3s;border: 1px solid #ddd;border-radius: 3px;padding: 4px;}
 </style>
 @endpush
 
 @push('scripts')
-<script src="{{asset('frontend/ckeditor/ckeditor.js')}}"></script>
-<script src="{{asset('frontend/ckeditor/config.js')}}"></script>
-<script src="{{asset('frontend/js/choosen/chosen.jquery.js')}}"></script>
+<script src="{{asset('frontend/js/my-company.js')}}"></script>
 <script>
     const AddFactoriesUrl = "{{route('account.add-partner-factories')}}";
 </script>

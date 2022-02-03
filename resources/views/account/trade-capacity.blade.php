@@ -276,7 +276,7 @@
 @endsection
  
 @push('css')
-<title>User Profile : ebizzmart</title>
+<title>Trade Capacity : ebizzmart</title>
 <link rel="stylesheet" type="text/css" media="screen,projection" href="{{asset('frontend/css/profile.css')}}">
 <link rel="stylesheet" type="text/css" media="screen,projection" href="{{asset('frontend/css/company-info.css')}}">
 <style>
@@ -285,6 +285,7 @@
 @endpush
 
 @push('scripts')
+<script src="{{asset('frontend/js/my-company.js')}}"></script>
 <script type="text/javascript">
 const UpdateTradeCapacity = "{{route('account.update-trade-capacity')}}";
 </script>

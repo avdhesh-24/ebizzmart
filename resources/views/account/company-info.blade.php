@@ -111,6 +111,13 @@
                                         </div>
                                         <div class="col-6">
                                             <ul class="prolist AllDetail">
+                                                <li><span>Company Email</span>
+                                                    <input type="email" name="company_email" value="{{$list->comp->company_email}}" placeholder="" class="inputtext noeditt" contenteditable="false" readonly="readonly">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-6">
+                                            <ul class="prolist AllDetail">
                                                 <li><span>I am</span>
                                                     <select class="inputtext noeditt chosen" id="floatingSelect" name="iam" aria-label="">
                                                         <option value="">-- Select Type --</option>
@@ -135,12 +142,12 @@
                                         </div>
                                         <div class="col-6">
                                             <ul class="prolist AllDetail">
-                                                <li><span>Company GST Number</span>
+                                                <li><span>GST Number</span>
                                                     <input type="text" name="gst" value="{{$list->comp->gst}}" placeholder="" class="inputtext noeditt" contenteditable="false" readonly="readonly">
                                                 </li>
                                             </ul>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-12">
                                             <ul class="prolist AllDetail">
                                                 <li><span>Business In</span>
                                                     <select class="inputtext noeditt chosen" multiple id="floatingSelect" name="business_in" aria-label="">
@@ -323,21 +330,16 @@
 <title>User Profile : ebizzmart</title>
 <link rel="stylesheet" type="text/css" media="screen,projection" href="{{asset('frontend/css/profile.css')}}">
 <link rel="stylesheet" type="text/css" media="screen,projection" href="{{asset('frontend/css/company-info.css')}}">
-<!-- <link rel="stylesheet" type="text/css" href="{{asset('frontend/css/choosen/chosen.css')}}"> -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.min.css" rel="stylesheet" media="all">
-<!-- <style>
-.defaultimgcss{width:130px;border-radius: 5px;cursor: pointer;transition: 0.3s;border: 1px solid #ddd;border-radius: 3px;padding: 4px;}
-</style> -->
 @endpush
 
 @push('scripts')
 <link rel="preload" as="style" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" onload="this.rel='stylesheet'" />
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 <script src="https://cdn.ckeditor.com/ckeditor5/31.1.0/classic/ckeditor.js"></script>
-<!-- <script src="{{asset('frontend/ckeditor/ckeditor.js')}}"></script> -->
 <script src="{{asset('frontend/ckeditor/config.js')}}"></script>
+<script src="{{asset('frontend/js/my-company.js')}}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"></script>
-<!-- <script src="{{asset('frontend/js/choosen/chosen.jquery.js')}}"></script> -->
 <script type="text/javascript">
 $(document).ready(function(){
     setTimeout(function(){

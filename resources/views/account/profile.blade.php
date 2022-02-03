@@ -176,6 +176,7 @@
 @endpush
 
 @push('scripts')
+<script src="{{asset('frontend/js/my-company.js')}}"></script>
 <script>
     const UpdateUserInfo = "{{route('account.update-user-information')}}";
     const UpdateCompanyInfo = "{{route('account.update-company-information')}}";

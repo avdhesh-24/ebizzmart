@@ -48,7 +48,9 @@
                                     </ul>
                                 </nav>
                                 <div>
-                                    <a href="#SendInquiry" data-bs-toggle="modal" class="btn btn-main mt-0 me-3" title="Send Inquiry"><i class="fal fa-envelope me-2"></i>Send Inquiry</a>
+                                    @if(Request::segment(3)!='contact')
+                                    <a href="{{url(Request::segment(1).'/'.Request::segment(2))}}/contact" class="btn btn-main2 mt-0 me-3" title="Send Inquiry"><i class="fal fa-envelope me-2"></i>Send Inquiry</a>
+                                    @endif
                                     <div class="input-group"><input type="text" class="form-control" placeholder="Search Product / Services" aria-label="Recipient's username" aria-describedby="basic-addon2"><span class="input-group-text" id="basic-addon2"><i class="fal fa-search"></i></span></div>
                                 </div>
                             </menu>
