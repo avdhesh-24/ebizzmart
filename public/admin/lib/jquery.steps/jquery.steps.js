@@ -277,12 +277,15 @@ function destroy(wizard, options)
  **/
 function finishStep(wizard, state)
 {
+    
     var currentStep = wizard.find(".steps li").eq(state.currentIndex);
 
     if (wizard.triggerHandler("finishing", [state.currentIndex]))
     {
         currentStep.addClass("done").removeClass("error");
         wizard.triggerHandler("finished", [state.currentIndex]);
+
+        $('#submitform').submit();
     }
     else
     {
@@ -2006,7 +2009,7 @@ var defaults = $.fn.steps.defaults = {
          * @default "Finish"
          * @for defaults
          **/
-        finish: "Finish",
+        finish: "Confirm & Save",
 
         /**
          * Label for the next button.

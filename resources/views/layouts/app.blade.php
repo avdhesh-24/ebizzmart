@@ -21,6 +21,7 @@
 <style>
     .error{font-size: 13px;
     color: #f16262;}
+    .success{color: #6ca844;}
 </style>
 <script>
     const CkeditorUpload = '{{route("ckeditor.image-upload")}}';
@@ -123,10 +124,10 @@
                         <form class="input-group">
                             <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="what are you looking for...">
                             <div class="SelectSearch">
-                                <button class="btn SearchDrop dropdown-toggle border-top border-bottom" type="button" data-bs-toggle="dropdown" aria-expanded="false"><span id="search_concept">All Product</span></button>
+                                <button class="btn SearchDrop dropdown-toggle border-top border-bottom" type="button" data-bs-toggle="dropdown" aria-expanded="false"><span id="search_concept">All</span></button>
                                 <ul class="dropdown-menu dropdown-menu-end">
-                                    <li><a class="dropdown-item" href="#">All Product</a></li>
-                                    <li><a class="dropdown-item" href="#">All Service</a></li>
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
                                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                                     <li><a class="dropdown-item" href="#">Separated link</a></li>
                                 </ul>

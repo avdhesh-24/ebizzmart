@@ -755,7 +755,7 @@ nav a.navbar-brand span{font-size:8px}
 .form-floating>label{padding:.65rem .75rem}
 .form-floating>textarea{height:140px!important}
 
-.chosen-container .chosen-single{border:1px solid #ddd!important;border-radius:0!important;box-shadow:none!important;height:34px!important;padding:5px!important;color:var(--black)!important}
+.chosen-container .chosen-single{border:1px solid #ddd!important;border-radius:0!important;box-shadow:none!important;height:34px!important;padding:5px!important;color:var(--black)!important;background:none!important;}
 .chosen-container .chosen-single span{font-size:14px!important;margin-right:15px!important;line-height:normal!important}
 .chosen-container .chosen-single div b{background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e") no-repeat right .3rem center!important;background-size:16px 12px!important}
 .chosen-container .chosen-drop{border-radius:0!important;border:1px solid #ddd!important;border-top:none!important;margin:0!important}

@@ -1,5 +1,5 @@
 @if(count($facility) >0 )
-<section class="BrandLinksTop Home pt-3">
+<section class="BrandLinksTop Home">
     <div class="container">
         <div class="owl-carousel" id="BrandLinksTop">
             @foreach($facility as $fac)

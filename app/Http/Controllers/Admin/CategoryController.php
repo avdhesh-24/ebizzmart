@@ -57,7 +57,7 @@ class CategoryController extends Controller
     }
 
     public function HomeStatus($Status,$Id){
-        Category::where('id',$Id)->update(['home_status'=>$Status]);
+        Category::where('id',$Id)->update(['home'=>$Status]);
         return back()->with('success_msg', 'This category has been set in home page.');
     }
 

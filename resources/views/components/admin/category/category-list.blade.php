@@ -49,6 +49,7 @@
                   <th>Alias</th>
                   <th>Sub Category</th>
                   <th>Status</th>
+                  @if($Parent==0)<th>Home</th>@endif
                   <th>Action</th>
                 </tr>
               </thead>
@@ -70,7 +71,15 @@
                     <a href="{{action('Admin\CategoryController@Status',['status'=>0,'id'=>$list->id])}}" class="btn btn-outline-success btn-icon rounded-circle" data-toggle="tooltip" data-placement="top" title="Dectivate"><div><i class="fa fa-thumbs-up"></i></div></a>
                     @endif
                   </td>
-                  
+                  @if($list->parent==0)
+                  <td>
+                    @if($list->home==0)
+                    <a href="{{action('Admin\CategoryController@HomeStatus',['status'=>1,'id'=>$list->id])}}" class="btn btn-outline-danger btn-icon rounded-circle" data-toggle="tooltip" data-placement="top" title="Activate"><div><i class="fa fa-thumbs-down"></i></div></a>
+                    @else
+                    <a href="{{action('Admin\CategoryController@HomeStatus',['status'=>0,'id'=>$list->id])}}" class="btn btn-outline-success btn-icon rounded-circle" data-toggle="tooltip" data-placement="top" title="Dectivate"><div><i class="fa fa-thumbs-up"></i></div></a>
+                    @endif
+                  </td>
+                  @endif
                   <td class="pd-r-0-force tx-center">
                     @if(count($list->child)==0)
                     <a href="#attribute" onclick="getAttributeGroup({{$list->id}})" data-toggle="modal" class="btn btn-outline-warning btn-icon rounded-circle" data-toggle="tooltip" data-placement="top" title="Map Attribute"><div><i class="fa fa-cubes"></i></div></a>

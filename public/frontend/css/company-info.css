@@ -52,7 +52,7 @@ div[role="progressbar"]:after{position:absolute;content:'';background:var(--whit
 .ComAlbums>div,.ComAlbums>a{overflow:hidden;display:inline-block;border-radius:3px!important;height:120px;width:100%;background:rgb(var(--blackrgb)/.08)}
 .ComAlbums>div img,.ComAlbums>a img{height:100%;width:100%;object-fit:contain}
 
-.AllDetail .pic{border:1px rgb(var(--blackrgb)/.1) dashed;background:rgb(var(--blackrgb)/.05);margin-bottom:15px;padding:9px;text-align:center;height:70px;width:100%;border-radius:5px;display:flex;align-items:center;justify-content:center;cursor:pointer}
+.AllDetail .pic{border:1px rgb(var(--blackrgb)/.1) dashed;background:rgb(var(--blackrgb)/.05);margin-bottom:15px;padding:9px;text-align:center;height:70px;width:100%;border-radius:5px;display:grid;place-content:center;cursor:pointer}
 .AllDetail .pic img{height:40px;opacity:.5;margin-right:9px}
 .AllDetail .pic span{display:flex;align-items:flex-end}
 .AllDetail .pic span>span{display:block}

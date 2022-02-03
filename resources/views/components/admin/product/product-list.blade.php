@@ -35,6 +35,7 @@
                   <th>Title</th>
                   <th>Category</th>
                   <th>Status</th>
+                  <th>Featured</th>
                   <th>Action</th>
                 </tr>
               </thead>
@@ -51,6 +52,13 @@
                     <a href="{{action('Admin\ProductController@Status',['status'=>1,'id'=>$list->id])}}" class="btn btn-outline-danger btn-icon rounded-circle" data-toggle="tooltip" data-placement="top" title="Category Activate"><div><i class="fa fa-thumbs-down"></i></div></a>
                     @else
                     <a href="{{action('Admin\ProductController@Status',['status'=>0,'id'=>$list->id])}}" class="btn btn-outline-success btn-icon rounded-circle" data-toggle="tooltip" data-placement="top" title="Category Dectivate"><div><i class="fa fa-thumbs-up"></i></div></a>
+                    @endif
+                  </td>
+                  <td>
+                    @if($list->featured==0)
+                    <a href="{{action('Admin\ProductController@Featured',['status'=>1,'id'=>$list->id])}}" class="btn btn-outline-danger btn-icon rounded-circle" data-toggle="tooltip" data-placement="top" title="Category Activate"><div><i class="fa fa-thumbs-down"></i></div></a>
+                    @else
+                    <a href="{{action('Admin\ProductController@Featured',['status'=>0,'id'=>$list->id])}}" class="btn btn-outline-success btn-icon rounded-circle" data-toggle="tooltip" data-placement="top" title="Category Dectivate"><div><i class="fa fa-thumbs-up"></i></div></a>
                     @endif
                   </td>
                   <td class="pd-r-0-force tx-center">
