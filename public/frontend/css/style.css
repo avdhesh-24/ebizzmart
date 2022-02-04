@@ -339,7 +339,7 @@ nav.navbar.menu .dropdown.CatMegamenu .dropdown-menu>div>ul>li:hover span,nav.na
 nav.navbar.menu .dropdown.CatMegamenu .dropdown-menu>div>ul>li:hover .CatSubMenu,nav.navbar.menu .dropdown.CatMegamenu .dropdown-menu>div>ul>li.active .CatSubMenu{display:block}
 nav.navbar.menu .dropdown.CatMegamenu .dropdown-menu>div>ul>li.active>span:before{opacity:1}
 
-nav>div.is-fixed{position:fixed;left:0;top:0;width:100%;box-shadow:0 0 8px rgb(var(--blackrgb)/.2);z-index:99;padding:0 15px;display:flex;background:#e8edef;-webkit-animation-duration:.1s;animation-duration:.1s;-webkit-animation-name:fadeInDown;animation-name:fadeInDown;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out}
+nav>div.is-fixed{position:fixed;left:0;top:0;width:100%;box-shadow:0 0 8px rgb(var(--blackrgb)/.2);z-index:99;padding:0 15px;display:flex;background:#e8edef;-webkit-animation-duration:.3s;animation-duration:.3s;-webkit-animation-name:fadeInDown;animation-name:fadeInDown;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out}
 @-webkit-keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}
 100%{opacity:1;-webkit-transform:none;transform:none}}
 @keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);-ms-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}
