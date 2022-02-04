@@ -17,8 +17,20 @@ class AccountProductController extends Controller{
         $this->middleware(['auth','verified']);
     }
     public function index(){
-        $lists = Product::with('category','brand','defaultprice')->where('company_id',Auth::user()->company)->paginate(10);
-        return view('account.product.list',compact('lists'));
+        $lists = Product::with('category','brand','defaultprice');
+        $lists = $lists->where('company_id',Auth::user()->company);
+        if(!empty($_GET['status'])){ 
+            if($_GET['status']=='approval-pending'){ $lists = $lists->where('status',0); }
+            if($_GET['status']=='approved'){ $lists = $lists->where('status',1); }
+            if($_GET['status']=='disapproved'){ $lists = $lists->where('status',2); }
+        }
+        $lists = $lists->paginate(10);
+
+        $total = Product::where('company_id',Auth::user()->company)->count();
+        $approved = Product::where('company_id',Auth::user()->company)->where('status',1)->count();
+        $disapproved = Product::where('company_id',Auth::user()->company)->where('status',2)->count();
+        $pending = Product::where('company_id',Auth::user()->company)->where('status',0)->count();
+        return view('account.product.list',compact('lists','approved','disapproved','pending','total'));
     }
     public function New($category=null){
         if(!empty($category)){
@@ -79,6 +91,7 @@ class AccountProductController extends Controller{
         $data->meta_description = $r->meta_description;
         $data->image = $ImageName;
         $data->thumb_image = $thumb;
+        $data->status = 0;
         $data->save();
         self::AddProductImages($r->all(),$data->id);
         self::AddProductAttribute($r->all(),$data->id);

@@ -6,7 +6,7 @@
             <div class="row mb-2">
                 <div class="col-md-12">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.php"><i class="fal fa-home-alt"></i></a></li>
+                        <li class="breadcrumb-item"><a href="{{url('/')}}"><i class="fal fa-home-alt"></i></a></li>
                         <li class="breadcrumb-item"><a aria-current="page">Manage Product</a></li>
                     </ol>
                 </div>
@@ -20,10 +20,10 @@
                             <div class="row align-items-center">
                                 <div class="col-md-8">
                                     <ul class="prosearchmenu mb-0">
-                                        <li><a href="#">All (0)</a></li>
-                                        <li><a href="#">Approved (0)</a></li>
-                                        <li><a href="#">Approval Pending (0)</a></li>
-                                        <li><a href="#">Dis-approved (0)</a></li>
+                                        <li><a href="{{url()->current()}}">All ({{$total}})</a></li>
+                                        <li><a href="{{url()->current()}}?_token={{csrf_token()}}&&status=approved">Approved ({{$approved}})</a></li>
+                                        <li><a href="{{url()->current()}}?_token={{csrf_token()}}&&status=approval-pending">Approval Pending ({{$pending}})</a></li>
+                                        <li><a href="{{url()->current()}}?_token={{csrf_token()}}&&status=disapproved">Dis-approved ({{$disapproved}})</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-md-4 text-end">
