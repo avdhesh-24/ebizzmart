@@ -21,7 +21,7 @@
                     <div class="card ProDBox">
                         <div class="card-body">
                             <div class="row">
-                                <div class="col-md-12 col-lg-4">
+                                <div class="col-md-12 col-lg-4"> 
                                     <div class="ZoomBox">
                                         <a href="{{asset('uploads/product/banner/'.$list->image)}}" data-fancybox="gallery"><img class="xzoom" src="{{asset('uploads/product/'.$list->thumb_image)}}" xoriginal="{{asset('uploads/product/banner/'.$list->image)}}"></a>
                                         <div id="thumimg" class="owl-carousel mt-3 xzoom-thumbs">
