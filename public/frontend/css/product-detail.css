@@ -33,7 +33,7 @@ body>.main{overflow:inherit!important}
 .ListingPage .CatCarousel .ProBlock .card-body .price{margin:9px 0 0;font-size:15px}
 .ListingPage .CatCarousel .ProBlock .card-body .price>.cutprice{font-size:11px}
 
-.Detail .ZoomBox{position:sticky;top:110px}
+.Detail .ZoomBox{position:sticky;top:110px; display:flex; flex-wrap:wrap; max-width:400px; justify-content:center;}
 .Detail h1{font-weight:600;line-height:140%}
 .Detail .share{display:flex;align-content:center;justify-content:flex-end}
 .Detail .share a,.Detail .pricebox .dropdown a{cursor:pointer;padding:0 0 9px;font-size:15px}

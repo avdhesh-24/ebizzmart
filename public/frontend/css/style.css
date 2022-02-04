@@ -590,7 +590,7 @@ nav a.navbar-brand span{font-size:8px}
 .CatImg{position:relative;height:477px;overflow:hidden}
 .CatImg .img{position:relative;height:100%}
 .CatImg .img:after{position:absolute;content:'';height:100%;width:100%;top:0;left:0;background:linear-gradient(to bottom,transparent 0%,transparent 0%,transparent 49%,rgb(var(--blackrgb)/.9) 75%,rgb(var(--blackrgb)/.95) 100%)}
-.CatImg .img img,.CatBlock .img img,.Featured .FedBlock .card-body img,.ProBlock .card-head img{min-height:100%;width:100%;object-fit:cover;transition:all .5s}
+.CatImg .img img,.CatBlock .img img,.Featured .FedBlock .card-body img,.ProBlock .card-head img{height:100%;width:100%;object-fit:contain;transition:all .5s}
 .CatImg .Text{position:absolute;bottom:-50px;left:0;width:100%;padding:15px 20px;transition:all .5s}
 .CatImg .Text ul,.CatBlock .con ul{margin:0;padding:0}
 .CatImg .Text ul li,.CatBlock .con ul li{font-size:13px;line-height:1.5rem!important;display:-webkit-box;overflow:hidden;-webkit-box-orient:vertical;-webkit-line-clamp:1}
