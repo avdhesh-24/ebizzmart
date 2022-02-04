@@ -72,18 +72,20 @@
                                         @endif
                                     </div>
                                     <p><strong class="text-secondary">MOQ </strong> <span class="text-success">{{$list->minimum_order}} Piece(s)</span></p>
-                                    @if(count($list->attribute) > 0)
+                                    
                                     <div class="Highlights mt-3">
+                                        @if(count($list->attribute) > 0)
                                         <strong class="text-secondary d-block mb-1">Highlights</strong>
                                         <ul class="mb-2">
                                             @foreach($list->attribute as $attribute)
                                             <li><span>{{$attribute->attribute->title}}</span> {{$attribute->description}}</li>
                                             @endforeach
                                         </ul>
+                                        @endif
                                         <p><small>{!! $list->short_description !!}</small></p>
                                         <p class="hmenu"><a href="#Specifications" class="thm"><small><u>View More Details</u></small></a></p>
                                     </div>
-                                    @endif
+                                    
                                     <div class="BuyBtnBox mt-4">
                                         <div>
                                             <h3 class="h5 mb-0"><strong>Interested in this product?</strong></h3>
