@@ -23,7 +23,7 @@
                             <div class="row">
                                 <div class="col-md-12 col-lg-4">
                                     <div class="ZoomBox">
-                                        <img class="xzoom" src="{{asset('uploads/product/banner/'.$list->image)}}" xoriginal="{{asset('uploads/product/banner/'.$list->image)}}">
+                                        <a href="{{asset('uploads/product/banner/'.$list->image)}}"><img class="xzoom" src="{{asset('uploads/product/'.$list->thumb_image)}}" xoriginal="{{asset('uploads/product/banner/'.$list->image)}}"></a>
                                         <div id="thumimg" class="owl-carousel mt-3 xzoom-thumbs">
                                             <div class="item"><a href="{{asset('uploads/product/banner/'.$list->image)}}"><img class="xzoom-gallery" src="{{asset('uploads/product/banner/'.$list->image)}}" xpreview="{{asset('uploads/product/banner/'.$list->image)}}" /></a></div>
                                             @foreach($list->images as $images)

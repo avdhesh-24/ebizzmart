@@ -14,4 +14,7 @@ class Category extends Model
     public function categorybrand(){
         return $this->hasMany(CategoryBrand::class);
     }
+    public function catattribute(){
+        return $this->hasMany(CategoryAttribute::class);
+    }
 }

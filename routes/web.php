@@ -70,9 +70,12 @@ Route::get('certifications-and-trademarks', [App\Http\Controllers\AccountControl
 Route::get('trade-capacity', [App\Http\Controllers\AccountController::class, 'Trade_Capacity'])->name('account.trade-capacity')->middleware('verified');
 Route::get('partner-factories', [App\Http\Controllers\AccountController::class, 'Partner_Factories'])->name('account.partner-factories')->middleware('verified');
 
+/// MANAGE PRODUCT
 Route::get('manage-product', [App\Http\Controllers\AccountProductController::class, 'index'])->name('account.manage-product')->middleware('verified');
 Route::get('post-product/{category?}', [App\Http\Controllers\AccountProductController::class, 'New'])->name('account.post-product')->middleware('verified');
 Route::post('choose-product-category', [App\Http\Controllers\AccountProductController::class, 'Choose_Product_Category'])->name('account.choose-product-category')->middleware('verified');
+Route::post('search-product-category', [App\Http\Controllers\AccountProductController::class, 'Search_Product_Category'])->name('account.search-product-category')->middleware('verified');
+Route::post('save-product', [App\Http\Controllers\AccountProductController::class, 'Save'])->name('account.save-product')->middleware('verified');
 
 
 Route::namespace("Admin")->prefix('control-panel')->group(function(){
