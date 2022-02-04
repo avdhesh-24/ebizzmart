@@ -6,9 +6,9 @@ body>.main{overflow:inherit!important}
 
 .xzoom-source img,.xzoom-preview img,.xzoom-lens img{display:block;max-width:none;max-height:none;-webkit-transition:none;-moz-transition:none;-o-transition:none;transition:none}
 .xzoom-container{display:inline-block}
-.xzoom{-webkit-box-shadow:0 0 5px 0 rgb(var(--blackrgb)/.2);-moz-box-shadow:0 0 5px 0 rgb(var(--blackrgb)/.2);box-shadow:0 0 5px 0 rgb(var(--blackrgb)/.2);width:100%!important;display:block}
+.xzoom{/*-webkit-box-shadow:0 0 5px 0 rgb(var(--blackrgb)/.2);-moz-box-shadow:0 0 5px 0 rgb(var(--blackrgb)/.2);box-shadow:0 0 5px 0 rgb(var(--blackrgb)/.2);*/width:100%!important;display:block}
 .xzoom2,.xzoom3,.xzoom4,.xzoom5{-webkit-box-shadow:0 0 5px 0 rgb(var(--blackrgb)/.2);-moz-box-shadow:0 0 5px 0 rgb(var(--blackrgb)/.2);box-shadow:0 0 5px 0 rgb(var(--blackrgb)/.2)}
-.xzoom-gallery,.xzoom-gallery2,.xzoom-gallery3,.xzoom-gallery4,.xzoom-gallery5{border:1px solid rgb(var(--blackrgb)/.2)}
+.xzoom-gallery,.xzoom-gallery2,.xzoom-gallery3,.xzoom-gallery4,.xzoom-gallery5{border:1px solid rgb(var(--blackrgb)/.2);height:65px;width:100%;object-fit:contain}
 .xzoom-source,.xzoom-hidden{display:block;position:static;float:none;clear:both;overflow:hidden;border:1px solid rgb(var(--blackrgb)/.2)}
 .xzoom-hidden{overflow:hidden}
 .xzoom-preview{border:1px solid rgb(var(--blackrgb)/.1);background:rgb(var(--blackrgb)/.8);box-shadow:0 0 10px rgb(var(--blackrgb)/.5);z-index:1}
@@ -33,7 +33,7 @@ body>.main{overflow:inherit!important}
 .ListingPage .CatCarousel .ProBlock .card-body .price{margin:9px 0 0;font-size:15px}
 .ListingPage .CatCarousel .ProBlock .card-body .price>.cutprice{font-size:11px}
 
-.Detail .ZoomBox{position:sticky;top:110px; display:flex; flex-wrap:wrap; max-width:400px; justify-content:center;}
+.Detail .ZoomBox{position:sticky;top:110px;display:flex;flex-wrap:wrap;max-width:400px;height:485px;align-items:center;justify-content:center;box-shadow:0 0 1px rgb(var(--blackrgb)/.4);}
 .Detail h1{font-weight:600;line-height:140%}
 .Detail .share{display:flex;align-content:center;justify-content:flex-end}
 .Detail .share a,.Detail .pricebox .dropdown a{cursor:pointer;padding:0 0 9px;font-size:15px}
